@@ -1,0 +1,5 @@
+com\portal\DBConnection.class
+com\portal\LoginServlet.class
+com\portal\StudentProfileServlet.class
+com\portal\FileServlet.class
+com\portal\LogoutServlet.class

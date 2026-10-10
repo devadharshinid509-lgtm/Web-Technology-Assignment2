@@ -1,0 +1,272 @@
+/* ===== Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* ===== Common Styling ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #26324b;
+    background: linear-gradient(135deg, #e0e7ff, #fce7f3, #dbeafe);
+    min-height: 100vh;
+}
+
+/* ===== Login Page ===== */
+.login-container {
+    max-width: 430px;
+    margin: 65px auto;
+    padding: 38px 35px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 24px;
+    box-shadow: 0 15px 45px rgba(79, 70, 229, 0.18);
+    border-top: 6px solid #6366f1;
+}
+
+.login-container h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    color: #4f46e5;
+    margin-bottom: 12px;
+}
+
+.login-container p {
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* ===== Form Fields ===== */
+label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: #334155;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 13px 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    background: #f8fafc;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #818cf8;
+    background: white;
+    box-shadow: 0 0 0 4px #e0e7ff;
+}
+
+/* ===== Buttons ===== */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient(90deg, #4f46e5, #9333ea);
+    box-shadow: 0 7px 18px rgba(99, 102, 241, 0.25);
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(90deg, #4338ca, #7e22ce);
+    box-shadow: 0 10px 22px rgba(99, 102, 241, 0.35);
+}
+
+/* ===== Error Message ===== */
+.error-message {
+    color: #dc2626 !important;
+    background: #fee2e2;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* ===== Student Profiles Page ===== */
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.container > h1 {
+    padding: 25px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    border-radius: 20px;
+    background: linear-gradient(100deg, #4338ca, #7c3aed, #db2777);
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.2);
+}
+
+.container > p {
+    padding: 16px 20px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(51, 65, 85, 0.06);
+}
+
+.container > p a {
+    float: right;
+    color: #e11d48;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.container > p a:hover {
+    color: #9f1239;
+    text-decoration: underline;
+}
+
+.container > h2 {
+    color: #4338ca;
+    margin-top: 30px;
+}
+
+/* ===== Individual Student Card ===== */
+.student-card {
+    position: relative;
+    overflow: hidden;
+    padding: 25px;
+    margin: 22px 0;
+    border-radius: 20px;
+    background: white;
+    border: 1px solid #e0e7ff;
+    box-shadow: 0 8px 25px rgba(51, 65, 85, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.student-card::before {
+    content: "";
+    display: block;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899);
+}
+
+.student-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgba(79, 70, 229, 0.14);
+}
+
+.student-card h2 {
+    color: #4f46e5;
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+.student-card p {
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.student-card h3 {
+    margin-top: 25px;
+    padding: 12px 15px;
+    color: #6d28d9;
+    background: #f3e8ff;
+    border-radius: 10px;
+}
+
+/* ===== Uploaded Files ===== */
+.file-item {
+    padding: 18px;
+    margin: 15px 0;
+    background: linear-gradient(120deg, #eff6ff, #faf5ff);
+    border: 1px solid #ddd6fe;
+    border-radius: 14px;
+}
+
+.file-item p {
+    font-size: 13px;
+    color: #475569;
+}
+
+.profile-image {
+    display: block;
+    max-width: 230px;
+    max-height: 230px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 3px solid #c4b5fd;
+    border-radius: 15px;
+    background: white;
+}
+
+/* ===== Links ===== */
+a {
+    color: #4f46e5;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.file-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    background: linear-gradient(90deg, #6366f1, #9333ea);
+    border-radius: 9px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.file-item a:hover {
+    background: linear-gradient(90deg, #4338ca, #7e22ce);
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .login-container {
+        margin: 35px auto;
+        padding: 25px 20px;
+    }
+
+    .login-container h1 {
+        font-size: 23px;
+    }
+
+    .container > h1 {
+        font-size: 24px;
+        padding: 20px 12px;
+    }
+
+    .student-card {
+        padding: 18px;
+    }
+
+    .container > p a {
+        float: none;
+        display: block;
+        margin-top: 10px;
+    }
+}
