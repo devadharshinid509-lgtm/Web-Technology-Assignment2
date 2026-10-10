@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Registration Form</h1>
+
+        <form id="registrationForm">
+
+            <label for="name">Student Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <p class="error" id="nameError"></p>
+
+            <label for="roll">Roll Number</label>
+            <input type="text" id="roll" placeholder="Enter your roll number">
+            <p class="error" id="rollError"></p>
+
+            <label for="email">Email Address</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <p class="error" id="emailError"></p>
+
+            <label for="course">Course</label>
+            <select id="course">
+                <option value="">Select Course</option>
+                <option value="CSE">CSE</option>
+                <option value="IT">IT</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+            </select>
+            <p class="error" id="courseError"></p>
+
+            <label for="password">Password</label>
+            <input type="password" id="password"
+                   placeholder="Enter a strong password">
+            <p class="error" id="passwordError"></p>
+
+            <label for="document">Upload Document</label>
+            <input type="file" id="document"
+                   accept=".pdf,.jpg,.jpeg,.png">
+            <p class="error" id="fileError"></p>
+
+            <button type="submit">Register</button>
+
+            <p id="success"></p>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
